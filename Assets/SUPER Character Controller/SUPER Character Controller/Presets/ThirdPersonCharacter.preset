@@ -1,0 +1,739 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ThirdPersonCharacter
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 8acb2371b9f0ce3429e7935fa5efe263, type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: playerCamera
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: lockAndHideMouse
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: autoGenerateCrosshair
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showCrosshairIn3rdPerson
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: crosshairSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: 47038960f1ae85045a4f4515860d3207, type: 3}
+  - target: {fileID: 0}
+    propertyPath: cameraPerspective
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: automaticallySwitchPerspective
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perspectiveSwitchingKey
+    value: 31
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: mouseInputInversion
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Sensitivity
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: rotationWeight
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: verticalRotationRange
+    value: 170
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: eyeHeight
+    value: 0.8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: viewInputMethods
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FOVKickAmount
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FOVSensitivityMultiplier
+    value: 0.74
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: rotateCharaterToCameraForward
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: maxCameraDistance
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: cameraObstructionIgnore.m_Bits
+    value: 51
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: cameraZoomSensitivity
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: bodyCatchupSpeed
+    value: 1.75
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: inputResponseFiltering
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: walkingSpeed
+    value: 300
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: sprintingSpeed
+    value: 400
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: crouchingSpeed
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: decelerationSpeed
+    value: 240
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: sprintKey
+    value: 51
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: crouchKey
+    value: 55
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: canSprint
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: isSprinting
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: toggleSprint
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: sprintOveride
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: canCrouch
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: isCrouching
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: toggleCrouch
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: crouchOverride
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: isIdle
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentStance
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: stanceTransisionSpeed
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: crouchingHeight
+    value: 0.8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundMovementSpeed
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: whatIsGround.m_Bits
+    value: 51
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: hardSlopeLimit
+    value: 55
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: slopeInfluenceOnSpeed
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: maxStairRise
+    value: 0.4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: stepUpSpeed
+    value: 0.2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: canJump
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: holdJump
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: jumpEnhancements
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Jumped
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: jumpKey
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: jumpPower
+    value: 70
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: airControlFactor
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: decentMultiplier
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: tapJumpMultiplier
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: isSliding
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: canSlide
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: slidingDeceleration
+    value: 78
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: slidingTransisionSpeed
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: maxFlatSlideDistance
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.isInContactWithGround
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.isGettingGroundInfo
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.potentialStair
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundAngleMultiplier_Inverse
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundAngleMultiplier_Inverse_persistent
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundAngleMultiplier
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundAngle
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundAngle_Raw
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.playerGroundPosition
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundRawYPosition
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundInfluenceDirection.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundInfluenceDirection.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundInfluenceDirection.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundNormal_Averaged.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundNormal_Averaged.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundNormal_Averaged.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundNormal_Raw.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundNormal_Raw.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundNormal_Raw.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundNormals_lowgrade.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundNormals_highgrade.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundTag
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundMaterial
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundLayer
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentGroundInfo.groundPhysicMaterial
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: enableStaminaSystem
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: jumpingDepletesStamina
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Stamina
+    value: 50
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentStaminaLevel
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: S_minimumStaminaToSprint
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: s_depletionSpeed
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: s_regenerationSpeed
+    value: 1.2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: s_JumpStaminaDepletion
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: enableFootstepSounds
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepTriggeringMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: stepTiming
+    value: 0.15
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.size
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0].profileTriggerType
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0]._Materials.Array.size
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0]._Materials.Array.data[0]
+    value: 
+    objectReference: {fileID: 2100000, guid: d59d1a81049fa9a44ab4cdcee36289b8, type: 2}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0]._Materials.Array.data[1]
+    value: 
+    objectReference: {fileID: 2100000, guid: 88f23ec2f5cd2ee4cb2c14bab6957536, type: 2}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0]._Materials.Array.data[2]
+    value: 
+    objectReference: {fileID: 2100000, guid: 6288f6a01fdd9d940a89aab35e44b729, type: 2}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0]._physicMaterials.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0]._Layers.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0].footstepClips.Array.size
+    value: 11
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0].footstepClips.Array.data[0]
+    value: 
+    objectReference: {fileID: 8300000, guid: 965861ab37dcd9549912eca505055b63, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0].footstepClips.Array.data[1]
+    value: 
+    objectReference: {fileID: 8300000, guid: a9e804a8165699a49bceb84d083a34a6, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0].footstepClips.Array.data[2]
+    value: 
+    objectReference: {fileID: 8300000, guid: fead5cfe6593ab64dac60ff7b677fb86, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0].footstepClips.Array.data[3]
+    value: 
+    objectReference: {fileID: 8300000, guid: b129e694a0fa16f498b497481befe169, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0].footstepClips.Array.data[4]
+    value: 
+    objectReference: {fileID: 8300000, guid: a3eb761c67da86e4d95a714d5040e215, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0].footstepClips.Array.data[5]
+    value: 
+    objectReference: {fileID: 8300000, guid: 49a4a47af61a25b4fb37c589359ef09c, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0].footstepClips.Array.data[6]
+    value: 
+    objectReference: {fileID: 8300000, guid: ffeb60b812fdc464499d8bd1c46cd055, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0].footstepClips.Array.data[7]
+    value: 
+    objectReference: {fileID: 8300000, guid: 7b10d52be5966cc49b99c126a03640e5, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0].footstepClips.Array.data[8]
+    value: 
+    objectReference: {fileID: 8300000, guid: fbe1939915c91b74f9eded7665492ef6, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0].footstepClips.Array.data[9]
+    value: 
+    objectReference: {fileID: 8300000, guid: e2f81d653f70254468486696deb5e2d7, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[0].footstepClips.Array.data[10]
+    value: 
+    objectReference: {fileID: 8300000, guid: e38fa940edefdd9479e226e6a3d4787e, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1].profileTriggerType
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1]._Materials.Array.size
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1]._Materials.Array.data[0]
+    value: 
+    objectReference: {fileID: 2100000, guid: ed3b50eb3271580478fa77f0f3d37ddc, type: 2}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1]._Materials.Array.data[1]
+    value: 
+    objectReference: {fileID: 2100000, guid: ccf7dab167fd02f44b9494613844b385, type: 2}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1]._physicMaterials.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1]._Layers.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1].footstepClips.Array.size
+    value: 11
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1].footstepClips.Array.data[0]
+    value: 
+    objectReference: {fileID: 8300000, guid: d3947cf2c6783a447bd0dae10cd8bb21, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1].footstepClips.Array.data[1]
+    value: 
+    objectReference: {fileID: 8300000, guid: e70c5fa5ed6b97f41aa555d63ca56d42, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1].footstepClips.Array.data[2]
+    value: 
+    objectReference: {fileID: 8300000, guid: 2667de89ddda8dc409eaf8f8261d1d8c, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1].footstepClips.Array.data[3]
+    value: 
+    objectReference: {fileID: 8300000, guid: 76909016e12b7b4469602526ddc6a164, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1].footstepClips.Array.data[4]
+    value: 
+    objectReference: {fileID: 8300000, guid: 0533ad72641beb64c84742701ea7fcd4, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1].footstepClips.Array.data[5]
+    value: 
+    objectReference: {fileID: 8300000, guid: 37aa905a30faf0d45a213f924449a6fb, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1].footstepClips.Array.data[6]
+    value: 
+    objectReference: {fileID: 8300000, guid: 5991900ee6498594ab6d0c668e329eb1, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1].footstepClips.Array.data[7]
+    value: 
+    objectReference: {fileID: 8300000, guid: e899671e45e608e4db37f6d6701c35ba, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1].footstepClips.Array.data[8]
+    value: 
+    objectReference: {fileID: 8300000, guid: 41b975e693999f942b5755a8f054c4ce, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1].footstepClips.Array.data[9]
+    value: 
+    objectReference: {fileID: 8300000, guid: 818617f6fe74a6345a5babff80a756e2, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[1].footstepClips.Array.data[10]
+    value: 
+    objectReference: {fileID: 8300000, guid: 01c377cd295d33a4db93c9467d59a6dd, type: 3}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[2].profileTriggerType
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[2]._Materials.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[2]._Materials.Array.data[0]
+    value: 
+    objectReference: {fileID: 2100000, guid: 1672ef0e80aae2342a8ea28ee63cefac, type: 2}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[2]._physicMaterials.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[2]._Layers.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: footstepSoundSet.Array.data[2].footstepClips.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: enableHeadbob
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: headbobSpeed
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: headbobPower
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ZTilt
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: enableSurvivalStats
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: defaultSurvivalStats.Health
+    value: 250
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: defaultSurvivalStats.Hunger
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: defaultSurvivalStats.Hydration
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: defaultSurvivalStats.hasLowHealth
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: defaultSurvivalStats.isStarving
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: defaultSurvivalStats.isDehydrated
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: statTickRate
+    value: 3.3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: hungerDepletionRate
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: hydrationDepletionRate
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentSurvivalStats.Health
+    value: 250
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentSurvivalStats.Hunger
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentSurvivalStats.Hydration
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentSurvivalStats.hasLowHealth
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentSurvivalStats.isStarving
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: currentSurvivalStats.isDehydrated
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: interactKey
+    value: 19
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: interactRange
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: interactableLayer.m_Bits
+    value: 4294967295
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _1stPersonCharacterAnimator
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _3rdPersonCharacterAnimator
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: a_velocity
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: a_2DVelocity
+    value: Vel
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: a_Grounded
+    value: Grounded
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: a_Idle
+    value: Idle
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: a_Jumped
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: a_Sliding
+    value: Sliding
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: a_Sprinting
+    value: Sprinting
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: a_Crouching
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: stickRendererToCapsuleBottom
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: enableGroundingDebugging
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: enableMovementDebugging
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: enableMouseAndCameraDebugging
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: enableVaultDebugging
+    value: 0
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []
