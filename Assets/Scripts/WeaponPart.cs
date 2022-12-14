@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponPart : MonoBehaviour
 {
-
+    //Weapon stats 
     public enum WeaponStatType
     {
         Damage,
@@ -14,7 +14,7 @@ public class WeaponPart : MonoBehaviour
         FireRate,
 
     }
-
+    //weapon rarities 
     public enum RarityLevel
     {
         Common,
@@ -26,6 +26,7 @@ public class WeaponPart : MonoBehaviour
 
     [System.Serializable]
 
+    //minimum and maximum stat value
     public class WeaponStatPair
     {
         public WeaponStatType stat;
@@ -39,7 +40,7 @@ public class WeaponPart : MonoBehaviour
     public Dictionary<WeaponStatType, float> stats = new Dictionary<WeaponStatType, float>();
 
     public RarityLevel rarityLevel;
-
+ 
     private void Awake()
     {
         foreach (WeaponStatPair statPair in rawStats)

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using Palmmedia.ReportGenerator.Core;
 
 public class WeaponGenerator : MonoBehaviour
 {
@@ -12,31 +14,36 @@ public class WeaponGenerator : MonoBehaviour
     public List<GameObject> MagazineParts;
     public List<GameObject> GripParts;
 
+    [SerializeField] TMP_InputField seedInputField;
+    [SerializeField] TextMeshProUGUI placeHolderSeedText;
+    [SerializeField] TextMeshProUGUI seedName;
 
+    GameObject currentWeapon = null;
     GameObject prevWeapon;
-    // Start is called before the first frame update
+
     void Start()
-    {
-
+    {  
+        GenerateWeapon();
+        ShowCursor();
     }
 
-    // Update is called once per frame
-    void Update()
+    int currentSeed;
+
+     public void GenerateWeapon()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        //when a weapon is generated it also sets a random seed number 
+        SetRandomSeed();
+
+        seedName.text = seedInputField.text;
+
+        //if the player generates a new gun the previous one is destroyed
+        if (prevWeapon != null)
         {
-            GenerateWeapon();
+            Destroy(prevWeapon);
         }
-    }
 
-    void GenerateWeapon()
-    {
-
-       // if (prevWeapon != null)
-       // {
-       //     Destroy(prevWeapon);
-       // }
-
+        // spawn weapon chasis 
+        // spawn parts at chasis sockets
         GameObject randomChasis = GetRandomPart(bodyParts);
         GameObject insBody = Instantiate(randomChasis, Vector3.zero, Quaternion.identity);
         WeaponBody wpnBody = insBody.GetComponent<WeaponBody>();
@@ -67,6 +74,45 @@ public class WeaponGenerator : MonoBehaviour
     {
         int randomNumber = Random.Range(0, partList.Count);
         return partList[randomNumber];
+    }
 
+    void SetRandomSeed()
+    {
+        if (seedInputField.text != "")
+        {
+            try //only numbers
+            {
+                currentSeed = System.Int32.Parse(seedInputField.text);
+            }
+            catch //if contains Letters
+            {
+                currentSeed = seedInputField.text.GetHashCode();
+            }
+        }
+        else
+            currentSeed = Random.seed;
+
+
+        Random.InitState(currentSeed);
+        placeHolderSeedText.text = currentSeed.ToString();
+    }
+    //this method when activated copies the guns seed so it can be recalled
+    public void CopySeedToClipboard()
+    {
+        GUIUtility.systemCopyBuffer = currentSeed.ToString();
+    }
+    //when this method is called the previously copied seed is deleted
+    public void ClearSeed()
+    {
+        seedInputField.text = "Seed string";
+    }
+    // on the start of the game the cursor is enabled
+    void ShowCursor()
+    {
+        if (!Cursor.visible || Cursor.lockState == CursorLockMode.Locked)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 }

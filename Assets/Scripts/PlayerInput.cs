@@ -13,7 +13,8 @@ public class PlayerInput : MonoBehaviour
 
     public LayerMask weaponMask;
 
-
+    // on pressing the E key a ray is fired from the player
+    // if the ray hits a weapon within range the player will pick up that weapon
     void Update()
     {
 
@@ -39,12 +40,12 @@ public class PlayerInput : MonoBehaviour
         {
             EquipWeapon(focusedWeapon);
         }
-
+        //if player has a gun in there hand and the click the mouse button the gun will fire
         if (equippedWeapon != null && Input.GetMouseButton(0))
         {
             equippedWeapon.DoFire();
         }
-
+        //if the player hits the R key the gun will reload and the magazine count will reset
         if (equippedWeapon != null && Input.GetKeyDown(KeyCode.R))
         {
             equippedWeapon.DoReload();
@@ -75,7 +76,7 @@ public class PlayerInput : MonoBehaviour
         StartCoroutine(MoveWeaponToSocket());
 
     }
-
+    // when a weapon is picked up it moves it into the players hands.
     IEnumerator MoveWeaponToSocket()
     {
 

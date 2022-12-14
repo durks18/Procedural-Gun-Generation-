@@ -34,6 +34,7 @@ public class WeaponBody : WeaponPart
         weaponParts.Add(magazine);
         weaponParts.Add(grip);
 
+
         CalculateStats();
         DetermineRarity();
 
@@ -66,7 +67,7 @@ public class WeaponBody : WeaponPart
         }
     }
 
-
+    //calculates the rarity of a weapon based on the rarity of each individual gun part
     void DetermineRarity()
     {
         int averageRarity = rawRarity / weaponParts.Count;
